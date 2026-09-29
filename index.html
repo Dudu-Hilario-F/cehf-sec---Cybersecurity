@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Eduardo Hilario Ferreira | Cybersecurity &amp; Infrastructure</title>
+  <meta name="description" content="Carlos Eduardo Hilario Ferreira: Cybersecurity &amp; Infrastructure. Offensive Security, Defensive Security, Security Labs, CTFs and infrastructure projects.">
+  <meta name="author" content="Carlos Eduardo Hilario Ferreira">
+  <meta name="theme-color" content="#050706">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Carlos Eduardo Hilario Ferreira | Cybersecurity &amp; Infrastructure">
+  <meta property="og:description" content="I build systems. I break systems. I secure systems. Technical portfolio: labs, write-ups, architectures and CTF operations.">
+  <meta property="og:url" content=""><!-- TODO: https://<user>.github.io/ -->
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23050706'/%3E%3Cpath d='M8 10l6 6-6 6' stroke='%2322ff88' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='16' y='20' width='9' height='3' fill='%2322ff88'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark">CEHF</span>
+        <span class="brand-prompt"><span class="p-user" data-handle>cehf</span>@sec<span class="dim">:~$</span><span class="cursor" aria-hidden="true"></span></span>
+      </a>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#whoami">whoami</a>
+        <a href="#offensive" data-i18n="nav.off">offensive</a>
+        <a href="#defensive" data-i18n="nav.def">defensive</a>
+        <a href="#infra">infra</a>
+        <a href="#labs">labs</a>
+        <a href="#ops" data-i18n="nav.ops">operations</a>
+        <a href="#certs" data-i18n="nav.certs">certs</a>
+        <a href="#contact" data-i18n="nav.contact">contact</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-controls="nav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="term">
+          <div class="term-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="term-title">~/portfolio · bash</span>
+          </div>
+          <div class="term-body">
+            <p class="cmd"><span class="ps"><span data-handle>cehf</span>@sec:~$</span> <span id="typed">whoami</span><span class="cursor" aria-hidden="true"></span></p>
+            <div id="hero-out" class="hero-out">
+              <h1 class="hero-name" data-site-name>Carlos Eduardo Hilario Ferreira</h1>
+              <p class="hero-role"><span class="acc">&gt;</span> <span data-i18n="hero.role">Cybersecurity &amp; Infrastructure</span></p>
+              <ul class="hero-areas">
+                <li>Offensive Security</li>
+                <li>Defensive Security</li>
+                <li>Infrastructure</li>
+                <li>Security Research</li>
+              </ul>
+              <div class="motto" aria-label="I build systems. I break systems. I secure systems.">
+                <span>I BUILD SYSTEMS.</span>
+                <span>I BREAK SYSTEMS.</span>
+                <span>I SECURE SYSTEMS.</span>
+              </div>
+              <div class="actions">
+                <a class="btn btn-solid" href="#offensive" data-i18n="hero.projects">VIEW PROJECTS</a>
+                <a class="btn" id="hero-github" data-link="github">GITHUB</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="panel sys" aria-label="System">
+          <div class="panel-head"><span>[ SYSTEM ]</span><span class="live"><i></i>ONLINE</span></div>
+          <dl class="kv">
+            <div><dt>OS</dt><dd>Linux / Windows</dd></div>
+            <div><dt data-i18n="sys.focus">FOCUS</dt><dd>Cybersecurity</dd></div>
+            <div><dt data-i18n="sys.spec">SPECIALIZATION</dt><dd>Offensive Security<br>Infrastructure<br>Blue Team<br>Network Security</dd></div>
+            <div><dt data-i18n="sys.mode">MODE</dt><dd>Build · Break · Secure</dd></div>
+            <div><dt>STATUS</dt><dd class="ok">ONLINE</dd></div>
+          </dl>
+          <div class="panel-foot"><span class="dim">uptime</span> <span id="uptime">00:00:00</span></div>
+        </aside>
+      </div>
+      <a class="scroll-hint" href="#whoami" aria-label="Scroll"><span class="dim">scroll</span> ↓</a>
+    </section>
+
+    <!-- ============ 01 WHOAMI ============ -->
+    <section id="whoami" class="sec">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">01</span>
+          <div>
+            <p class="sec-cmd">$ cat whoami.txt</p>
+            <h2>WHOAMI</h2>
+          </div>
+        </header>
+        <div class="about">
+          <div class="about-text">
+            <p class="lead" data-i18n="about.lead">I'm Carlos Eduardo, a cybersecurity professional who came from infrastructure. I know how environments are built, and that is exactly how I know where they break.</p>
+            <p data-i18n="about.p1">My foundation is infrastructure: routing and switching with MikroTik and pfSense, VLAN segmentation, VPN, Linux and Windows Server, Active Directory, Samba file servers and virtualization on Proxmox. That is the ground where every attack and every defense actually happens.</p>
+            <p data-i18n="about.p2">On top of that foundation I build my own labs to practice offensive security in a controlled way: reconnaissance, enumeration, privilege escalation and Active Directory attack paths. Then I switch sides: I collect the logs, build the detection, investigate what happened and harden the environment.</p>
+            <p data-i18n="about.p3">I don't run tools blindly. I want to understand why an attack works, what it leaves behind and how to stop it. Every lab here ends with documentation and a repository.</p>
+            <p class="focus"><span class="acc">$ echo $FOCUS</span><br>Active Directory · Network Pentesting · Detection Engineering</p>
+          </div>
+          <div class="cycle" aria-label="Build, break, secure">
+            <div class="cycle-step"><span class="cycle-k">01</span><strong>BUILD</strong><span data-i18n="about.build">MikroTik, pfSense, VLANs, Windows Server, Active Directory, Proxmox</span></div>
+            <div class="cycle-step"><span class="cycle-k">02</span><strong>BREAK</strong><span data-i18n="about.break">Recon, enumeration, privilege escalation and AD attack paths in labs</span></div>
+            <div class="cycle-step"><span class="cycle-k">03</span><strong>SECURE</strong><span data-i18n="about.secure">Wazuh, Sysmon, log analysis, detection and hardening</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02 OFFENSIVE ============ -->
+    <section id="offensive" class="sec">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">02</span>
+          <div>
+            <p class="sec-cmd">$ ls ./offensive-security</p>
+            <h2>OFFENSIVE SECURITY</h2>
+          </div>
+        </header>
+        <p class="sec-intro" data-i18n="off.intro">Areas of study and practice. Each one is linked to real projects and labs as they are published.</p>
+        <ol class="killchain">
+          <li><span>01</span>Reconnaissance</li>
+          <li><span>02</span>Enumeration</li>
+          <li><span>03</span>Initial Access</li>
+          <li><span>04</span>Privilege Escalation</li>
+          <li><span>05</span>Active Directory</li>
+          <li><span>06</span>Network Pentesting</li>
+          <li><span>07</span>Web Security</li>
+          <li><span>08</span>Post Exploitation</li>
+          <li><span>09</span>CTF</li>
+        </ol>
+        <h3 class="sub"><span class="acc">//</span> <span data-i18n="off.projects">PROJECTS</span></h3>
+        <div id="projects" class="cards"></div>
+      </div>
+    </section>
+
+    <!-- ============ 03 DEFENSIVE ============ -->
+    <section id="defensive" class="sec">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">03</span>
+          <div>
+            <p class="sec-cmd">$ tail -f /var/log/defense.log</p>
+            <h2>DEFENSIVE SECURITY</h2>
+          </div>
+        </header>
+        <p class="sec-intro" data-i18n="def.intro">Offensive knowledge used to build defense. Every attack studied becomes a detection, an investigation and a hardening step.</p>
+        <ol class="flow" aria-label="Attack to hardening">
+          <li class="f-red">ATTACK</li>
+          <li class="f-red">COMPROMISE</li>
+          <li>DETECTION</li>
+          <li>INVESTIGATION</li>
+          <li>RESPONSE</li>
+          <li class="f-green">HARDENING</li>
+        </ol>
+        <div class="def-grid">
+          <div class="panel">
+            <div class="panel-head"><span>[ STACK / CONCEPTS ]</span></div>
+            <ul class="chips">
+              <li>Wazuh</li><li>SIEM</li><li>Windows Event Logs</li><li>Sysmon</li><li>Threat Detection</li><li>Incident Response</li>
+              <li>Hardening</li><li>Firewall</li><li>IDS/IPS</li><li>Network Monitoring</li><li>Log Analysis</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <div class="panel-head"><span>[ LEGEND ]</span></div>
+            <ul class="legend">
+              <li><span class="badge t-lab">LAB</span><span data-i18n="leg.lab">Controlled lab environment</span></li>
+              <li><span class="badge t-project">PROJECT</span><span data-i18n="leg.project">Documented, published project</span></li>
+              <li><span class="badge t-study">STUDY</span><span data-i18n="leg.study">Theoretical study / course</span></li>
+              <li><span class="badge t-certification">CERTIFICATION</span><span data-i18n="leg.cert">Formal certification</span></li>
+            </ul>
+            <p class="note" data-i18n="def.note">Nothing here is presented as production experience unless explicitly stated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 INFRA ============ -->
+    <section id="infra" class="sec">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">04</span>
+          <div>
+            <p class="sec-cmd">$ show network topology</p>
+            <h2>INFRASTRUCTURE</h2>
+          </div>
+        </header>
+        <p class="sec-intro" data-i18n="infra.intro">The systems where attacks and defenses actually happen. Reference lab architecture:</p>
+        <div class="infra-grid">
+          <figure class="panel topo">
+            <svg viewBox="0 0 640 400" role="img" aria-labelledby="topo-t">
+              <title id="topo-t">Reference lab topology: Internet, firewall, attacker and user segments, core network, domain controller, file server and SIEM.</title>
+              <g class="links">
+                <path d="M320 58V96"/><path d="M320 138V160H170V190"/><path d="M320 160H470V190"/>
+                <path d="M170 232V262H320"/><path d="M470 232V262H320"/><path d="M320 262V290"/>
+                <path d="M320 318V334H130V350"/><path d="M320 334V350"/><path d="M320 334H510V350"/>
+              </g>
+              <g class="node"><rect x="250" y="20" width="140" height="38"/><text x="320" y="44">INTERNET</text></g>
+              <g class="node hot"><rect x="250" y="96" width="140" height="42"/><text x="320" y="116">FIREWALL</text><text class="s" x="320" y="130">pfSense</text></g>
+              <g class="node red"><rect x="100" y="190" width="140" height="42"/><text x="170" y="210">ATTACKER</text><text class="s" x="170" y="224">VLAN 66 · Kali</text></g>
+              <g class="node"><rect x="400" y="190" width="140" height="42"/><text x="470" y="210">USERS</text><text class="s" x="470" y="224">VLAN 20</text></g>
+              <g class="node hot"><rect x="240" y="290" width="160" height="28"/><text x="320" y="309">CORE NETWORK</text></g>
+              <g class="node"><rect x="60" y="350" width="140" height="42"/><text x="130" y="370">AD / DC</text><text class="s" x="130" y="384">Windows Server</text></g>
+              <g class="node"><rect x="250" y="350" width="140" height="42"/><text x="320" y="370">FILE SERVER</text><text class="s" x="320" y="384">Samba / SMB</text></g>
+              <g class="node hot"><rect x="440" y="350" width="140" height="42"/><text x="510" y="370">SIEM</text><text class="s" x="510" y="384">Wazuh</text></g>
+            </svg>
+            <figcaption class="note" data-i18n="infra.cap">Reference diagram. Real architectures are published with each lab.</figcaption>
+          </figure>
+          <div class="infra-stack">
+            <div class="panel"><div class="panel-head"><span>[ NETWORK ]</span></div><ul class="chips"><li>MikroTik</li><li>pfSense</li><li>VLAN</li><li>VPN</li><li>Routing</li><li>Switching</li></ul></div>
+            <div class="panel"><div class="panel-head"><span>[ SYSTEMS ]</span></div><ul class="chips"><li>Linux</li><li>Windows Server</li><li>Proxmox</li></ul></div>
+            <div class="panel"><div class="panel-head"><span>[ SERVICES ]</span></div><ul class="chips"><li>Active Directory</li><li>Samba</li><li>File Servers</li><li>Monitoring</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 LABS ============ -->
+    <section id="labs" class="sec">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">05</span>
+          <div>
+            <p class="sec-cmd">$ ls ./labs</p>
+            <h2>SECURITY LABS</h2>
+          </div>
+        </header>
+        <p class="sec-intro" data-i18n="labs.intro">Hands-on labs: objective, attack path, defensive counterpart and stack.</p>
+        <div id="labs-list" class="cards"></div>
+      </div>
+    </section>
+
+    <!-- ============ 06 OPERATIONS ============ -->
+    <section id="ops" class="sec">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">06</span>
+          <div>
+            <p class="sec-cmd">$ cat operations.log</p>
+            <h2>CTF / OPERATIONS</h2>
+          </div>
+        </header>
+        <p class="sec-intro" data-i18n="ops.intro">Operation log: Hack The Box, TryHackMe, CTFs and offensive labs.</p>
+        <div class="panel log">
+          <div class="log-row log-h" aria-hidden="true"><span>DATE</span><span>PLATFORM</span><span>TARGET</span><span>OS</span><span>TOPIC</span><span>STATUS</span></div>
+          <ul id="ops-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 07 CERTS ============ -->
+    <section id="certs" class="sec">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">07</span>
+          <div>
+            <p class="sec-cmd">$ ls ./certifications</p>
+            <h2>CERTIFICATIONS / LEARNING</h2>
+          </div>
+        </header>
+        <p class="sec-intro" data-i18n="certs.intro">Status shown as it is: completed, in progress or planned.</p>
+        <ul id="certs-list" class="certs"></ul>
+      </div>
+    </section>
+
+    <!-- ============ 08 CONTACT ============ -->
+    <section id="contact" class="sec">
+      <div class="wrap">
+        <header class="sec-head">
+          <span class="sec-num">08</span>
+          <div>
+            <p class="sec-cmd">$ ./connect.sh</p>
+            <h2 data-i18n="contact.title">GITHUB / CONTACT</h2>
+          </div>
+        </header>
+        <div class="contact panel">
+          <p class="lead" data-i18n="contact.lead">Every project on this site points to a repository: code, configuration and documentation.</p>
+          <p class="pipeline">SITE → PROJECT → ARCHITECTURE → WRITE-UP → <span class="acc">GITHUB</span></p>
+          <div class="actions" id="contact-links"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-in">
+      <span>© <span id="year">2026</span> <span data-site-name>Carlos Eduardo Hilario Ferreira</span></span>
+      <span class="dim" data-i18n="footer">Static site · GitHub Pages · no trackers</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
